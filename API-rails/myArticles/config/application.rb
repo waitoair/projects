@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.generators.javascript_engine = :js
+# config.generators.javascript_engine = :js
 
 module MyArticles
   class Application < Rails::Application
