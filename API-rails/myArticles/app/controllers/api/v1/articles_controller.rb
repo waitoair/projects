@@ -13,12 +13,28 @@ module Api
         render json: {status: 'success', message: 'Here is your Article :)', data: article}, status: :ok
       end
 
-      def create #localhost:3000/api/v1/articles
-        if article = Article.create(article_params)
-          render json: {status: 'success', message: 'Article created!', data: article}, status: :ok
-        else 
-          render json: {status: 'error', message: 'Article could not be created!', data: article.errors}, status: :unprocessable_entity
-        end
+			def create #localhost:3000/api/v1/articles
+				article = Article.new(article_params)
+				if article.save
+					render json: {status: 'success', message:'Saved article', data: article}, status: :ok
+				else
+					render json: {status: 'error', message:'Articles not saved', data: article.errors}, status: :unprocessable_entity
+				end
+			end
+
+      def update  #localhost:3000/api/v1/articles/5
+        article = Article.find(params[:id])
+				if article.update_attributes(article_params)
+					render json: {status: 'success', message:'Updated article', data: article}, status: :ok
+				else
+					render json: {status: 'error', message:'Articles not update', data: article.errors}, status: :unprocessable_entity
+				end
+			end
+
+      def destroy #localhost:3000/api/v1/articles/6
+        article = Article.find(params[:id])
+        article.destroy
+        render json: {status: 'success', message:'Deleted article', data: article}, status: :ok
       end
 
       private
