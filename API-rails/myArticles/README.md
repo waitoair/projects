@@ -21,6 +21,6 @@ Update article - Invalid body request.
 ![Imagem do projeto](app/assets/images/put-error.png)
 
 ## :file_folder: DELETE
-Delete article
+Delete article                  
 ![Imagem do projeto](app/assets/images/delete.png)
 <br />
