@@ -3,24 +3,24 @@
 
 ## :file_folder: GET
 
-Get all articles.   
+Get all articles.    
 ![Imagem do projeto](app/assets/images/get.png)
 
 ## :file_folder: POST
-Create article with success 
+Create article with success         
 ![Imagem do projeto](app/assets/images/post-success.png)
 
-Create article with error
+Create article with error       
 ![Imagem do projeto](app/assets/images/post-error.png)
 
 ## :file_folder: PUT
-Updated articles.   
+Updated articles.      
 ![Imagem do projeto](app/assets/images/put-success.png)
 
-Update article - Invalid body request.   
+Update article - Invalid body request.     
 ![Imagem do projeto](app/assets/images/put-error.png)
 
 ## :file_folder: DELETE
-Delete article                  
+Delete article                   
 ![Imagem do projeto](app/assets/images/delete.png)
 <br />
