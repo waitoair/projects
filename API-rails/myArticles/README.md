@@ -1,24 +1,26 @@
-# README
+<h1 align="center">My Articles API</h1>
+<br />
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## :file_folder: GET
 
-Things you may want to cover:
+Get all articles.   
+![Imagem do projeto](app/assets/images/get.png)
 
-* Ruby version
+## :file_folder: POST
+Create article with success 
+![Imagem do projeto](app/assets/images/post-success.png)
 
-* System dependencies
+Create article with error
+![Imagem do projeto](app/assets/images/post-error.png)
 
-* Configuration
+## :file_folder: PUT
+Updated articles.   
+![Imagem do projeto](app/assets/images/put-success.png)
 
-* Database creation
+Update article - Invalid body request.   
+![Imagem do projeto](app/assets/images/put-error.png)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## :file_folder: DELETE
+Delete article
+![Imagem do projeto](app/assets/images/delete.png)
+<br />
