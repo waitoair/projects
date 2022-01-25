@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+.screen {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  width: 80%;
+  height: auto;
+}
+
+.right-side {
+  width: 300px;
+  background-color: #ddd
+}
