@@ -1,4 +1,4 @@
-<h1 align="center">Projects</h1>
+<h1 align="center"> Desafios B7-Web </h1>
 <br />
 
 ---
@@ -9,4 +9,4 @@ Folder dedicated to the challenges proposed by B7-Web course, made with the guid
 
 ---
 
-### :link: LinkedIn: https://www.linkedin.com/in/saraivaluana/
+#### :link: LinkedIn: https://www.linkedin.com/in/saraivaluana/
