@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -15,11 +19,26 @@ body {
 }
 
 .left-side img {
-  width: 80%;
+  max-width: 500px;
   height: auto;
 }
 
 .right-side {
-  width: 300px;
-  background-color: #ddd
+  width: 400px;
+  background-color: #DDD;
+  padding: 50px;
+}
+
+.right-side label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.right-side input {
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  outline: 0;
 }
