@@ -1,12 +1,19 @@
-let b7validator = {
-  handleSubmit(event) {
+let b7Validator = {
+  handleSubmit:(event)=>{
     event.preventDefault();
     let send = true;
 
     let inputs = form.querySelectorAll('input');
-    for (let i = 0; i < inputs.length; i++) {
-      let input = inputs[i]
-      console.log(input);
+
+    // b7Validator.clearErrors();
+
+    for(let i=0;i<inputs.length;i++) {
+      let input = inputs[i];
+      let check = b7Validator.checkInput(input);
+      if(check !== true) {
+        send = false;
+        b7Validator.showError(input, check);
+      }
     }
 
     if(send) {
@@ -16,4 +23,4 @@ let b7validator = {
 }
 
 let form = document.querySelector('.b7validator');
-form.addEventListener('submit', b7validator.handleSubmit)
+form.addEventListener('submit', B7Validator.handleSubmit);
